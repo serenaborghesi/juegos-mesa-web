@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Catan",
+    "description": "Juego de estrategia y comercio.",
+    "duration": "60-90 minutos",
+    "image": "catan.jpg",
+    "history": "Catan fue publicado por primera vez en 1995.",
+    "strategies": "Prioriza los recursos más comunes al principio.",
+    "curiosities": ["Tiene múltiples expansiones.", "Fue uno de los primeros eurogames populares."]
+  },
+  {
+    "name": "Dixit",
+    "description": "Juego creativo de cartas ilustradas.",
+    "duration": "30 minutos",
+    "image": "dixit.jpg",
+    "history": "Creado en 2008 por Jean-Louis Roubira.",
+    "strategies": "Sé sutil pero no confuso en tus pistas.",
+    "curiosities": ["Ganó el Spiel des Jahres en 2010.", "Las ilustraciones son hechas por artistas invitados."]
+  }
+]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juegos de Mesa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Juegos de Mesa</h1>
+  <div id="juegos-container"></div>
+
+  <script>
+    fetch("juegos.json")
+      .then(response => response.json())
+      .then(juegos => {
+        const container = document.getElementById("juegos-container");
+        juegos.forEach(juego => {
+          const div = document.createElement("div");
+          div.className = "juego-card";
+          div.innerHTML = `
+            <h2>${juego.name}</h2>
+            <img src="img/${juego.image}" width="200" alt="${juego.name}" />
+            <p>${juego.description}</p>
+            <a href="juego.html?game=${encodeURIComponent(juego.name)}">Ver más</a>
+          `;
+          container.appendChild(div);
+        });
+      });
+  </script>
+</body>
+</html>
